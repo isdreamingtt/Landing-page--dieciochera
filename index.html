@@ -51,44 +51,58 @@
     <section id="informacion" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4 fw-bold">Todo acerca del evento</h2>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <p class="lead">texto</p> <!-- completar la información que traera el evento, aun por ver. -->
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-danger">📅 Fecha</h5>
+                    <p class="mb-0">18 y 19 de septiembre<br>Desde las 18:00 hrs</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-danger">📍 Lugar</h5>
+                    <p class="mb-0">Parque Croata, Coquimbo</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-danger">🎟️ Entrada</h5>
+                    <p class="mb-0">Estudiantes: $3.000<br>General: $5.000</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">Una fonda pensada por y para estudiantes: comida típica a precio amigable, música en vivo y espacio techado en caso de lluvia. Ideal para celebrar las Fiestas Patrias con los compañeros de universidad antes de las vacaciones.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="atractivos" class = "py-5">
-        <div class = "container">
-            <h2 class = "text-center mb-4 fw-bold text-danger">Disfruta de todo esto!</h2>
-            <div class = "row g-4">
-                <div class = "col-md-4">
-                    <div class = "card">
-                        <div class = "card-body">
-                            <h5 class = "card-title fw-bold">Comida Típica</h5>
-                            <p class = "card-text"> texto </p> <!-- completar info card 1-->
+    <section id="atractivos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold text-danger">Disfruta de todo esto!</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Empanada_Chilena.JPG" class="card-img-top" alt="Empanadas chilenas" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Comida Típica</h5>
+                            <p class="card-text">Empanadas de pino recién horneadas, anticuchos a la parrilla y las tradicionales sopaipillas, para que no falte nada en tu mesa.</p>
                         </div>
-
                     </div>
                 </div>
 
-                <div class = "col-md-4">
-                    <div class = "card">
-                        <div class = "card-body">
-                            <h5 class = "card-title fw-bold"> otro </h5>
-                            <p class = "card-text"> texto </p> <!-- completar info card 2-->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%BAsico%20chileno%20tocando%20cueca.jpg" class="card-img-top" alt="Cueca en vivo" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cueca en Vivo</h5>
+                            <p class="card-text">Disfruta de bandas y conjuntos folclóricos tocando cueca en vivo, con espacio para que te animes a bailar.</p>
                         </div>
-
                     </div>
                 </div>
-                <div class = "col-md-4">
-                    <div class = "card">
-                        <div class = "card-body">
-                            <h5 class = "card-title fw-bold"> otro </h5>
-                            <p class = "card-text"> texto </p> <!-- completar info card 3-->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/18-09-11%20Fiestas%20Patrias%20Palacio%20de%20La%20Moneda.jpg" class="card-img-top" alt="Ambiente Fiestas Patrias" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Juegos Criollos</h5>
+                            <p class="card-text">Rayuela, palo ensebado y otros juegos típicos para toda la familia, en un ambiente 100% chileno.</p>
                         </div>
-
                     </div>
                 </div>
                 <!-- para agregar más cards seguir el mismo formato-->
@@ -100,8 +114,44 @@
         <div class="container">
             <h2 class="text-center mb-4 fw-bold">Cronograma</h2>
             <div class="row">
-                <div class="col-md-6 mb-3">
-                    <p class="lead">texto</p> <!-- completar la información que traera el evento, aun por ver. -->
+                <div class="col-12">
+                    <!-- rounded-4 + overflow-hidden en el div "recortan" la tabla para que se vea con bordes redondeados -->
+                    <div class="table-responsive rounded-4 overflow-hidden shadow-sm">
+                        <table class="table table-striped table-hover align-middle mb-0">
+                            <thead class="table-danger">
+                                <tr>
+                                    <th scope="col">Hora</th>
+                                    <th scope="col">Actividad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>18:00 hrs</td>
+                                    <td>Apertura de puertas y ambientación</td>
+                                </tr>
+                                <tr>
+                                    <td>18:30 hrs</td>
+                                    <td>Inicio de venta de comida típica</td>
+                                </tr>
+                                <tr>
+                                    <td>19:30 hrs</td>
+                                    <td>Presentación de cueca y bailes típicos</td>
+                                </tr>
+                                <tr>
+                                    <td>21:00 hrs</td>
+                                    <td>Bandas en vivo</td>
+                                </tr>
+                                <tr>
+                                    <td>23:00 hrs</td>
+                                    <td>DJ y pista de baile</td>
+                                </tr>
+                                <tr>
+                                    <td>01:00 hrs</td>
+                                    <td>Cierre del evento</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,16 +171,34 @@
     </section>
     
     <footer class="bg-dark text-white py-4">
-
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-md-6 mb-3 mb-md-0">
-                    <h5 class = "md-3">CONTACTO</h5>
-                    <p class = "mb-0">Correo: info@fondadieciochera.cl</p>
-                    <p class = "mb-0">Teléfono: +56 9 1234 5678</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">CONTACTO</h5>
+                    <p class="mb-0">Correo: info@fondadieciochera.cl</p>
+                    <p class="mb-0">Teléfono: +56 9 1234 5678</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-3">ENLACES</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#hero" class="link-light link-offset-2 link-underline-opacity-25">Inicio</a></li>
+                        <li><a href="#informacion" class="link-light link-offset-2 link-underline-opacity-25">Información</a></li>
+                        <li><a href="#atractivos" class="link-light link-offset-2 link-underline-opacity-25">Atractivos</a></li>
+                        <li><a href="#cronograma" class="link-light link-offset-2 link-underline-opacity-25">Cronograma</a></li>
+                        <li><a href="#mapa" class="link-light link-offset-2 link-underline-opacity-25">Cómo llegar</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">SÍGUENOS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25">Instagram</a></li>
+                        <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25">Facebook</a></li>
+                        <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25">TikTok</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <hr class="border-secondary my-3">
         <div class="container text-center">
             <p class="mb-0">&copy; 2026 Fonda Dieciochera. Todos los derechos reservados.</p>
         </div>
